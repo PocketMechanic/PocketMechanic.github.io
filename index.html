@@ -9,7 +9,10 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
-
+    <!-- Payment Head -->
+    <script 
+      src="https://www.paypal.com/sdk/js?client-id=BAAGUBIgxw3holzjG6vF5oEIwb78jmvGia5bxYPVLndy555rKO4ZuGVUW_g9wJqIiirKbxagsjHdw_bZy4&components=hosted-buttons&enable-funding=venmo&currency=USD">
+    </script>
 </head>
 <body>
 <div class="container-fluid">
@@ -79,6 +82,13 @@
         <div class="row">
             <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
         </div>
+        <!-- Paypal Text -->
+        <div id="paypal-container-XJYQ6MDHQSYCU"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "XJYQ6MDHQSYCU",
+          }).render("#paypal-container-XJYQ6MDHQSYCU")
+        </script>
      </div>
   </footer>
 </div>
