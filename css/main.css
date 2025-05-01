@@ -9,3 +9,64 @@
     padding: 10px;
     font-size: 0.5rem;
 }
+
+.pintura1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.card-body.card-body.text-center{
+    background-color: gray;
+}
+
+.card-text{
+    color: white;
+}
+
+/*
+.pintura2{
+    background-image: url(../images/reception.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.pintura3{
+    background-image: url(../images/1930\ Store\ Dept.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.pintura4{
+    background-image: url(../images/Mall.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 50px;
+}*/
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; /* You can adjust this as needed */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+.custom-img{
+    height: 100%;
+    object-fit: cover;
+}
