@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/PocketMechanic.github.io/images/carFavicon.jpg">
     <title>My First Bootstrap Page</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -14,73 +15,222 @@
       src="https://www.paypal.com/sdk/js?client-id=BAAGUBIgxw3holzjG6vF5oEIwb78jmvGia5bxYPVLndy555rKO4ZuGVUW_g9wJqIiirKbxagsjHdw_bZy4&components=hosted-buttons&enable-funding=venmo&currency=USD">
     </script>
 </head>
+
 <body>
-<div class="container-fluid">
-    <div class="row">
-            <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
-
-                <!-- Brand -->
-                <a class="navbar-brand" href="index.html">Pocket Mechanic</a>
-                <!-- Responsive Button for the smaller menu -->
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <!-- Links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="product.html">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="checkout.html">Checkout</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                               data-bs-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Catalog
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="bundle1.html">Accord Bundle</a>
-                                <a class="dropdown-item" href="bundle2.html">CRV Bundle</a>
-                                <a class="dropdown-item" href="bundle3.html">2 in 1 Bundle</a>
-                                <a class="dropdown-item" href="bundle4.html">3 in 1 Bundle</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+                <nav class="navbar navbar-expand-md
+                        justify-content-start
+                        bg-dark navbar-dark
+                        col-12">
+    
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="index.html">Pocket Mechanic</a>
+                    <!-- Responsive Button for the smaller menu -->
+                    <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <!-- Links -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+    
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                                data-bs-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Catalog
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="bundle1.html">Accord Bundle</a>
+                                    <a class="dropdown-item" href="bundle2.html">CRV Bundle</a>
+                                    <a class="dropdown-item" href="bundle3.html">2 in 1 Bundle</a>
+                                    <a class="dropdown-item" href="bundle4.html">3 in 1 Bundle</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
-        <!--<div class="row">
-        <p class="col-1">Col 1</p>
-        <p class="col-1">Col 2</p>
-        <p class="col-1">Col 3</p>
-        <p class="col-1">Col 4</p>
-        <p class="col-1">Col 5</p>
-        <p class="col-1">Col 6</p>
-        <p class="col-1">Col 7</p>
-        <p class="col-1">Col 8</p>
-        <p class="col-1">Col 9</p>
-        <p class="col-1">Col 10</p>
-        <p class="col-1">Col 11</p>
-        <p class="col-1">Col 12</p>
-        </div>-->
-    <div class="col-sm-4  text-center">
-        <h2>h2 Bootstrap heading (24px)</h2>
-        <h3>h2 Bootstrap heading (18px)</h3>
+        </div>
     </div>
-</div>
+        
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font: 400 15px/1.8 "Lato", sans-serif;
+          color: #777;
+        }
+        
+        .bgimg-1, .bgimg-2, .bgimg-3{
+          position: relative;
+          opacity: 0.65;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        
+        }
+
+        .bgimg-4 {
+            background-color: rgba(247, 247, 247, 0.65); /* instead of opacity */
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bgimg-1 {
+            background-image: url("images/img4.jpg"); /* Assuming relative path is correct */
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("images/img2.jpg"); /* This is okay if site root matches */
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("images/img3.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-4 {
+            background-color: #f7f7f7;
+            min-height: 400px;/*blank section*/
+        }
+        /*
+        #paypal-container-XJYQ6MDHQSYCU iframe {
+            display: block;
+            margin: 0 auto;
+        }*/
+        
+        .caption {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          color: #000;
+        }
+        
+        .caption span.border {
+          background-color: #111;
+          color: #fff;
+          padding: 18px;
+          font-size: 25px;
+          letter-spacing: 10px;
+        }
+
+        .caption span.border {
+            display: inline-block;
+            text-align: center;
+        }
+
+        
+        h3 {
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          font: 20px "Lato", sans-serif;
+          color: #111;
+        }
+        
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+          .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+          }
+        }
+    </style>
+        
+        <div class="bgimg-1">
+          <div class="caption">
+          <span class="border">
+            <div style="font-size: 28px;">Pocket Mechanic</div>
+            <div style="font-size: 16px;">Car DIY where it matters</div>
+          </span>
+          </div>
+        </div>
+        
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3 style="text-align:center;">Top of the line car parts</h3>
+          <p style="text-align: center;">Pocket Mechanic thrives on the idea where our loyal customers can find the right parts for 
+            their car. From their first DIY project, to their more advance technical needs we have the right 
+            tools and technicians to help you build the car of your dreams.
+          </p>
+        </div>
+        
+        <div class="bgimg-2">
+            <div class="caption">
+            <span class="border">
+                <div style="font-size: 28px;"><a href="product.html" class="card-text">Replacements</a></div>
+            </span>
+            </div>
+        </div>
+    
+        
+        <div style="position:relative;">
+          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p style="text-align: center;">Check out some of the products we have for your important vehicle project.</p>
+          </div>
+        </div>
+        
+        <div class="bgimg-3">
+            <div class="caption">
+            <span class="border">
+              <div style="font-size: 28px;"><a href="https://www.rockauto.com/" target="_blank" class="card-text">Partnership</a></div>
+            </span>
+            </div>
+        </div>
+        
+        <div style="position:relative;">
+          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p style="text-align: center;">Take a look at the catalog to some of our fine and reputable partnered companies.</p>
+          </div>
+        </div>
+        
+        <div class="bgimg-1">
+          <div class="caption">
+          <span class="border">Because We Care</span>
+          </div>
+        </div>
+
+        <div class="text-center d-flex justify-content-center align-items-center">
+            <div class="mt-5 text-center" style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 10px; max-width: 400px; width: 100%;">
+                <h3 class="mb-3">Support Us</h3>
+                <div id="paypal-container-XJYQ6MDHQSYCU"></div>
+            </div>
+        </div>
+        
+        
+        <script>
+            window.addEventListener("DOMContentLoaded", function () {
+              paypal.HostedButtons({
+                hostedButtonId: "XJYQ6MDHQSYCU",
+              }).render("#paypal-container-XJYQ6MDHQSYCU");
+            });
+        </script>
+          
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">A little bit helps along the Road!</h3>
+            <p>We rely on the loyal customers like you to keep the cars going
+                and the roads safe. That is why we have partnered with other auto mechanic companies
+                to meet your needs. We continue to provide the best quality in vehicle products. That is why when you
+                use our payment portal, we earn a little more to continue and service your car needs. That's what it means to us here at Pocket Mechanic
+            </p>
+        </div>
+    
  <footer class="footer page-footer font-small ">
      <div class="container">
         <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+            <span class="text-muted">&copy; Pocket Mechanic, 2025 |  Terms Of Use  |  Privacy Statement</span>
         </div>
   </footer>
 </div>
