@@ -3,244 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="images/carFavicon.jpg">
-    <title>Home</title>
+    <title>Pocket Mechanic - DIY Diagnostic & Support</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <!-- Payment Head -->
-    <script 
-      src="https://www.paypal.com/sdk/js?client-id=BAAGUBIgxw3holzjG6vF5oEIwb78jmvGia5bxYPVLndy555rKO4ZuGVUW_g9wJqIiirKbxagsjHdw_bZy4&components=hosted-buttons&enable-funding=venmo&currency=USD">
-    </script>
-</head>
 
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAGUBIgxw3holzjG6vF5oEIwb78jmvGia5bxYPVLndy555rKO4ZuGVUW_g9wJqIiirKbxagsjHdw_bZy4&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+</head>
 <body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <div class="container-fluid">
-        <div class="row">
-                <nav class="navbar navbar-expand-md
-                        justify-content-start
-                        bg-dark navbar-dark
-                        col-12">
-    
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="index.html">Pocket Mechanic</a>
-                    <!-- Responsive Button for the smaller menu -->
-                    <button class="navbar-toggler" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <!-- Links -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="product.html">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-    
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                                data-bs-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Catalog
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="bundle1.html">Accord Bundle</a>
-                                    <a class="dropdown-item" href="bundle2.html">CRV Bundle</a>
-                                    <a class="dropdown-item" href="bundle3.html">2 in 1 Bundle</a>
-                                    <a class="dropdown-item" href="bundle4.html">3 in 1 Bundle</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
+        <a class="navbar-brand" href="index.html">Pocket Mechanic</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="catalogDropdown" data-bs-toggle="dropdown">
+                        Catalog
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="bundle1.html">Accord Bundle</a></li>
+                        <li><a class="dropdown-item" href="bundle2.html">CRV Bundle</a></li>
+                        <li><a class="dropdown-item" href="bundle3.html">2 in 1 Bundle</a></li>
+                        <li><a class="dropdown-item" href="bundle4.html">3 in 1 Bundle</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-        
-    <style>
-        body, html {
-          height: 100%;
-          margin: 0;
-          font: 400 15px/1.8 "Lato", sans-serif;
-          color: #777;
-        }
-        
-        .bgimg-1, .bgimg-2, .bgimg-3{
-          position: relative;
-          opacity: 0.65;
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        
-        }
+</nav>
 
-        .bgimg-4 {
-            background-color: rgba(247, 247, 247, 0.65); /* instead of opacity */
-            min-height: 400px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .bgimg-1 {
-            background-image: url("images/img4.jpg"); /* Assuming relative path is correct */
-            min-height: 100%;
-        }
+<!-- Hero Image -->
+<div class="bgimg-1" style="background-image: url('images/img4.jpg'); min-height: 100vh; background-size: cover; background-position: center; position: relative;">
+    <div class="caption text-center text-white" style="top: 45%; position: absolute; width: 100%;">
+        <h1 style="background: rgba(0,0,0,0.6); display: inline-block; padding: 15px 30px; border-radius: 8px;">Pocket Mechanic</h1>
+        <p style="background: rgba(0,0,0,0.5); display: inline-block; padding: 10px 20px; border-radius: 8px;">Affordable Diagnostics & DIY Tutorials</p>
+    </div>
+</div>
 
-        .bgimg-2 {
-            background-image: url("images/img2.jpg"); /* This is okay if site root matches */
-            min-height: 400px;
-        }
+<!-- Questions-->
+<div style="background-color: #000; padding: 60px 30px; text-align: center; color: #f8f9fa;">
+  <h2 style="margin-bottom: 30px; font-weight: bold; color: #ffffff;">Ever Been Stuck Without a Mechanic?</h2>
+  <div class="hook-questions" style="max-width: 700px; margin: 0 auto; position: relative; height: 60px; font-size: 1.4rem;">
+    <span id="rotating-question" style="display: inline-block; transition: opacity 0.5s ease-in-out; color: #00ffcc; text-shadow: 0 0 10px #00ffcc;"></span>
+  </div>
+  <h3 style="margin-top: 40px; font-weight: 600; color: #e0e0e0;">
+    PocketMechanic is your DIY partner — translating car error codes into plain English and helping you fix it step by step.
+  </h3>
+</div>
 
-        .bgimg-3 {
-            background-image: url("images/img3.jpg");
-            min-height: 400px;
-        }
+<script>
+  const questions = [
+    "Did you ever try to fix something and not know how?",
+    "Ever wish car repairs made sense?",
+    "Do you want an app that translates car errors into human text?",
+    "Wish you had a mechanic in your pocket?",
+    "Want to learn DIY car fixes with step-by-step guides?"
+  ];
 
-        .bgimg-4 {
-            background-color: #f7f7f7;
-            min-height: 400px;/*blank section*/
-        }
-        /*
-        #paypal-container-XJYQ6MDHQSYCU iframe {
-            display: block;
-            margin: 0 auto;
-        }*/
-        
-        .caption {
-          position: absolute;
-          left: 0;
-          top: 50%;
-          width: 100%;
-          text-align: center;
-          color: #000;
-        }
-        
-        .caption span.border {
-          background-color: #111;
-          color: #fff;
-          padding: 18px;
-          font-size: 25px;
-          letter-spacing: 10px;
-        }
+  let index = 0;
+  const questionEl = document.getElementById("rotating-question");
 
-        .caption span.border {
-            display: inline-block;
-            text-align: center;
-        }
+  function showNextQuestion() {
+    questionEl.style.opacity = 0;
+    setTimeout(() => {
+      questionEl.textContent = questions[index];
+      questionEl.style.opacity = 1;
+      index = (index + 1) % questions.length;
+    }, 500);
+  }
 
-        
-        h3 {
-          letter-spacing: 5px;
-          text-transform: uppercase;
-          font: 20px "Lato", sans-serif;
-          color: #111;
-        }
-        
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-          .bgimg-1, .bgimg-2, .bgimg-3 {
-            background-attachment: scroll;
-          }
-        }
-    </style>
-        
-        <div class="bgimg-1">
-          <div class="caption">
-          <span class="border">
-            <div style="font-size: 28px;">Pocket Mechanic</div>
-            <div style="font-size: 16px;">Car DIY where it matters</div>
-          </span>
-          </div>
-        </div>
-        
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-          <h3 style="text-align:center;">Top of the line car parts</h3>
-          <p style="text-align: center;">Pocket Mechanic thrives on the idea where our loyal customers can find the right parts for 
-            their car. From their first DIY project, to their more advance technical needs we have the right 
-            tools and technicians to help you build the car of your dreams.
-          </p>
-        </div>
-        
-        <div class="bgimg-2">
-            <div class="caption">
-            <span class="border">
-                <div style="font-size: 28px;"><a href="product.html" class="card-text">Replacements</a></div>
-            </span>
-            </div>
-        </div>
-    
-        
-        <div style="position:relative;">
-          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-          <p style="text-align: center;">Check out some of the products we have for your important vehicle project.</p>
-          </div>
-        </div>
-        
-        <div class="bgimg-3">
-            <div class="caption">
-            <span class="border">
-              <div style="font-size: 28px;"><a href="https://www.rockauto.com/" target="_blank" class="card-text">Partnership</a></div>
-            </span>
-            </div>
-        </div>
-        
-        <div style="position:relative;">
-          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-          <p style="text-align: center;">Take a look at the catalog to some of our fine and reputable partnered companies.</p>
-          </div>
-        </div>
-        
-        <div class="bgimg-1">
-          <div class="caption">
-          <span class="border">Because We Care</span>
-          </div>
-        </div>
+  setInterval(showNextQuestion, 4000);
+  showNextQuestion();
+</script>
 
-        <div class="text-center d-flex justify-content-center align-items-center">
-            <div class="mt-5 text-center" style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 10px; max-width: 400px; width: 100%;">
-                <h3 class="mb-3">Support Us</h3>
-                <div id="paypal-container-XJYQ6MDHQSYCU"></div>
-            </div>
-        </div>
-        
-        
-        <script>
-            window.addEventListener("DOMContentLoaded", function () {
-              paypal.HostedButtons({
-                hostedButtonId: "XJYQ6MDHQSYCU",
-              }).render("#paypal-container-XJYQ6MDHQSYCU");
-            });
-        </script>
-          
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 style="text-align:center;">A little bit helps along the Road!</h3>
-            <p>We rely on the loyal customers like you to keep the cars going
-                and the roads safe. That is why we have partnered with other auto mechanic companies
-                to meet your needs. We continue to provide the best quality in vehicle products. That is why when you
-                use our payment portal, we earn a little more to continue and service your car needs. That's what it means to us here at Pocket Mechanic
-            </p>
-        </div>
-    
- <footer class="footer page-footer font-small ">
-     <div class="container">
-        <div class="row">
-            <span class="text-muted">&copy; Pocket Mechanic, 2025 |  Terms Of Use  |  Privacy Statement</span>
-        </div>
-  </footer>
+<div style="background-color: #f9f9f9; padding: 60px 30px; text-align: center; color: #111;">
+  <h2 style="margin-bottom: 30px; font-weight: bold; color: #111111;">How PocketMechanic Works</h2>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.7; color: #333333;">
+    Just snap a picture of your car's dashboard warning light, and tell us your <strong>make, model, year, and mileage</strong>. Our smart diagnostic system takes it from there.
+  </p>
+  <p style="max-width: 800px; margin: 30px auto 0 auto; font-size: 1.2rem; line-height: 1.7; color: #333333;">
+    Our AI will instantly identify the warning symbol, explain what it means in plain English, and provide step-by-step instructions to fix the issue — whether you can handle it yourself or need a mechanic.
+  </p>
+  <h3 style="margin-top: 40px; font-weight: 600; color: #006666;">From dash light to done — we’ve got your back.</h3>
 </div>
 
 
-    <!-- Javascript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
+<!-- Support/Diagnostic Focus -->
+<div class="text-center d-flex justify-content-center align-items-center">
+  <div class="mt-5 text-center" style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 10px; max-width: 400px; width: 100%;">
+      <h3 class="mb-3">Purchase Our Service to Get Started</h3>
+      <div id="paypal-container-XJYQ6MDHQSYCU"></div>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+  <a href="camera.html" style="display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+    PayPal Override
+  </a>
+</div>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    paypal.HostedButtons({
+      hostedButtonId: "XJYQ6MDHQSYCU",
+    }).render("#paypal-container-XJYQ6MDHQSYCU");
+  });
 </script>
 
+<!-- Paypal Script -->
+<script>
+    window.addEventListener("DOMContentLoaded", function () {
+        paypal.HostedButtons({
+            hostedButtonId: "XJYQ6MDHQSYCU",
+        }).render("#paypal-container-XJYQ6MDHQSYCU");
+    });
+</script>
+
+<!-- Replacement Parts -->
+<section class="bgimg-2" style="background-image: url('images/img2.jpg'); min-height: 400px; background-size: cover; background-position: center;">
+    <div class="caption text-center">
+        <h2 class="border bg-dark text-white py-2 px-4 rounded">Need Replacement Parts?</h2>
+    </div>
+</section>
+<div class="bg-dark text-white text-center py-3">
+    <p>Explore our curated selection of parts for your next project. From sensors to filters, we’ve got you covered.</p>
+    <a href="product.html" class="btn btn-outline-light">Browse Products</a>
+</div>
+
+<!-- Partnerships -->
+<section class="bgimg-3" style="background-image: url('images/img3.jpg'); min-height: 400px; background-size: cover; background-position: center;">
+    <div class="caption text-center">
+        <h2 class="border bg-dark text-white py-2 px-4 rounded"><a href="https://www.rockauto.com/" target="_blank" class="text-white text-decoration-none">RockAuto Partnership</a></h2>
+    </div>
+</section>
+<div class="bg-dark text-white text-center py-3">
+    <p>We work with reputable partners to bring you the best tools and parts in the industry.</p>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-4">
+    <p class="text-muted mb-0">&copy; Pocket Mechanic, 2025 | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+</footer>
+
+<!-- JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
